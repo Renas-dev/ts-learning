@@ -61,3 +61,4 @@ let alternativeWay = (message as string).endsWith('c');
 
 
 
+
