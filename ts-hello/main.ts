@@ -56,6 +56,25 @@ let alternativeWay = (message as string).endsWith('c');
 
 */
 
+/* 
+
+lesson 5, arrow functions
+
+let log = function(message) {
+    console.log(message);
+} //Javescript of using functions
+
+let doLog = (message) => {
+    console.log(message);
+} //Typescript arrow function
+
+let onelineLog = (message) => console.log(message);
+//if the function only has one line u can make it look cleaner.
+
+let onlineEmptyLog = () => console.log();
+//if u don't have any parameters u can one line it too
+
+*/
 
 
 
