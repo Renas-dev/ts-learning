@@ -76,6 +76,26 @@ let onlineEmptyLog = () => console.log();
 
 */
 
+/*lesson 6, interfaces */
+
+interface Point { 
+// when using interaces always use Pascal naming convetion first letter capatalized
+    x: number,
+    y: number
+}
+
+ let drawPoint = (point: Point) => {
+     //...
+ } 
+
+ drawPoint({
+     x: 1,
+     y: 2
+ }) 
+
+
+
+
 
 
 
