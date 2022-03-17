@@ -1,4 +1,6 @@
-/*Lesson 1, understanding that typescript is similiar to jave script
+/*
+
+Lesson 1, understanding that typescript is similiar to jave script
 
 function log(message) {
      console.log(message);
@@ -6,10 +8,14 @@ function log(message) {
 
  var message = 'Hello World';
 
-log(message);  */
+log(message);  
+
+*/
 
 
-/*Lesson 2, Declaring Variables
+/*
+
+Lesson 2, Declaring Variables
 
 var number = 1;
 let count =2;
@@ -21,9 +27,13 @@ function doSomething(){
     console.log('Finally: ' + i);
 }
 
-doSomething(); */
+doSomething(); 
 
-/*lesson 3, Types  
+*/
+
+/*
+
+lesson 3, Types  
 let a: number; //any integer or floating point numbers
 let b: boolean; //true or false
 let c: string; //letters or words
@@ -32,7 +42,21 @@ let e: number[] = [1, 2, 3,]; //arrays
 let f: any[] = [1, true, 'a', false]// any can be used for array's too but its bad practice and avoid this
 
 enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3 };
-let backgroundColor = Color.Red; */
+let backgroundColor = Color.Red;
+
+*/
+
+/*
+
+lesson 4, type assertions
+let message;
+message = 'abc';
+let endsWithC = (<string>message).endsWith('c');  //2 ways of using TS build in functions with an any type let.
+let alternativeWay = (message as string).endsWith('c');
+
+*/
+
+
 
 
 
