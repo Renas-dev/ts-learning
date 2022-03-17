@@ -3,6 +3,6 @@ function log(message) {
     console.log(message);
 }
 
-var message = 'Hello World';
+var message = 'Hello Worlds';
 
 log(message);
