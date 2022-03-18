@@ -141,7 +141,7 @@ interface Point {
 
 /*
 
-lesson 9 constructors*/
+lesson 9 constructors
 
 class Point {
     x: number;
@@ -160,3 +160,20 @@ class Point {
 let point = new Point(1, 2);
 point.draw();
 
+*/
+
+/*
+lesson 10 access modifiers in constructors  */
+
+class Point {
+        //if u wanna create a point object withouth setting the values u add ? to the parameters
+    constructor(private x?: number, private y?: number){
+    }
+    //by default any method will be set to public unless stated wise
+    draw(){
+        console.log('X: ' + this.x +', Y: ' + this.y);
+    }
+}
+//an object is an instance of a class
+let point = new Point(1, 2);
+point.draw();
