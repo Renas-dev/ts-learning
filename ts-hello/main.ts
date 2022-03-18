@@ -163,7 +163,8 @@ point.draw();
 */
 
 /*
-lesson 10 access modifiers in constructors  */
+
+lesson 10 access modifiers in constructors
 
 class Point {
         //if u wanna create a point object withouth setting the values u add ? to the parameters
@@ -176,4 +177,33 @@ class Point {
 }
 //an object is an instance of a class
 let point = new Point(1, 2);
+point.draw();
+
+*/
+
+/*
+
+lesson 11 properties */
+
+class Point {
+    constructor(private x?: number, private y?: number) {
+   }
+
+    draw() {
+        console.log('X: '+ this.x + ', Y: ' + this.y);
+    }
+    get X() {
+        return this.x;
+    }
+
+    set X(value) {
+        if (value <0)
+            throw new console.error('value cannot be less then 0.');
+            
+    this.x = value;
+    }
+}
+
+let point = new Point(1, 2);
+let x = point.X;
 point.draw();
