@@ -183,7 +183,7 @@ point.draw();
 
 /*
 
-lesson 11 properties */
+lesson 11 properties
 
 class Point {
     constructor(private x?: number, private y?: number) {
@@ -206,4 +206,14 @@ class Point {
 
 let point = new Point(1, 2);
 let x = point.X;
+point.draw();
+
+*/
+
+/*
+
+lesson 12 modules*/
+//to import our module we have to import + module name + from where the file is located
+import { Point } from './point';
+let point = new Point(1, 2);
 point.draw();
