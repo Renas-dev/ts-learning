@@ -1,4 +1,6 @@
-/*Lesson 1, understanding that typescript is similiar to jave script
+/*
+
+Lesson 1, understanding that typescript is similiar to jave script
 
 function log(message) {
      console.log(message);
@@ -6,8 +8,12 @@ function log(message) {
 
  var message = 'Hello World';
 
-log(message);  */
-/*Lesson 2, Declaring Variables
+log(message);
+
+*/
+/*
+
+Lesson 2, Declaring Variables
 
 var number = 1;
 let count =2;
@@ -19,20 +25,104 @@ function doSomething(){
     console.log('Finally: ' + i);
 }
 
-doSomething(); */
-/*lesson 3, Types  
-var a; //any integer or floating point numbers
-var b; //true or false
-var c; //letters or words
-var d; // can be used to store any type
-var e = [1, 2, 3,]; //arrays
-var f = [1, true, 'a', false]; // any can be used for array's too but its bad practice and avoid this
-var Color;
-(function (Color) {
-    Color[Color["Red"] = 0] = "Red";
-    Color[Color["Green"] = 1] = "Green";
-    Color[Color["Blue"] = 2] = "Blue";
-    Color[Color["Purple"] = 3] = "Purple";
-})(Color || (Color = {}));
-;
-var backgroundColor = Color.Red; */
+doSomething();
+
+*/
+/*
+
+lesson 3, Types
+
+let a: number; //any integer or floating point numbers
+let b: boolean; //true or false
+let c: string; //letters or words
+let d: any; // can be used to store any type
+let e: number[] = [1, 2, 3,]; //arrays
+let f: any[] = [1, true, 'a', false]// any can be used for array's too but its bad practice and avoid this
+
+enum Color {Red = 0, Green = 1, Blue = 2, Purple = 3 };
+let backgroundColor = Color.Red;
+
+*/
+/*
+
+lesson 4, type assertions
+
+let message;
+message = 'abc';
+let endsWithC = (<string>message).endsWith('c');  //2 ways of using TS build in functions with an any type let.
+let alternativeWay = (message as string).endsWith('c');
+
+*/
+/*
+
+lesson 5, arrow functions
+
+let log = function(message) {
+    console.log(message);
+} //Javescript of using functions
+
+let doLog = (message) => {
+    console.log(message);
+} //Typescript arrow function
+
+let onelineLog = (message) => console.log(message);
+//if the function only has one line u can make it look cleaner.
+
+let onlineEmptyLog = () => console.log();
+//if u don't have any parameters u can one line it too
+
+*/
+/*
+
+lesson 6, interfaces
+
+interface Point {
+// when using interaces always use Pascal naming convetion first letter capatalized
+    x: number,
+    y: number
+}
+
+ let drawPoint = (point: Point) => {
+     //...
+ }
+
+ drawPoint({
+     x: 1,
+     y: 2
+ })
+
+ */
+/*
+
+lesson 7 classes
+
+class Point{
+    x: number;
+    y: number;
+    draw(){
+       // ...
+    }
+
+    getDistance(another: Point) {
+    }
+}
+
+*/
+/*
+
+lesson 8 objects*/
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.draw = function () {
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    };
+    Point.prototype.getDistance = function (another) {
+        //...
+    };
+    return Point;
+}());
+var point = new Point();
+point.x = 1;
+point.y = 2;
+point.draw();
