@@ -76,7 +76,7 @@ let onlineEmptyLog = () => console.log();
 
 */
 
-/*lesson 6, interfaces */
+/*lesson 6, interfaces
 
 interface Point { 
 // when using interaces always use Pascal naming convetion first letter capatalized
@@ -92,6 +92,8 @@ interface Point {
      x: 1,
      y: 2
  }) 
+
+ */
 
 
 
