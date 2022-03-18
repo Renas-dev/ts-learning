@@ -118,7 +118,7 @@ interface Point {
 
  /*
  
- lesson 8 objects*/
+ lesson 8 objects
 
  class Point {
      x: number;
@@ -137,7 +137,26 @@ interface Point {
  point.y = 2;
  point.draw();
 
+*/
 
+/*
 
+lesson 9 constructors*/
 
+class Point {
+    x: number;
+    y: number;
+        //if u wanna create a point object withouth setting the values u add ? to the parameters
+    constructor(x?: number, y?: number){
+        this.x = x;
+        this.y = y;
+    }
+
+    draw(){
+        console.log('X: ' + this.x +', Y: ' + this.y);
+    }
+}
+//an object is an instance of a class
+let point = new Point(1, 2);
+point.draw();
 
