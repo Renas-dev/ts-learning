@@ -34,6 +34,7 @@ doSomething();
 /*
 
 lesson 3, Types  
+
 let a: number; //any integer or floating point numbers
 let b: boolean; //true or false
 let c: string; //letters or words
@@ -49,6 +50,7 @@ let backgroundColor = Color.Red;
 /*
 
 lesson 4, type assertions
+
 let message;
 message = 'abc';
 let endsWithC = (<string>message).endsWith('c');  //2 ways of using TS build in functions with an any type let.
@@ -76,7 +78,9 @@ let onlineEmptyLog = () => console.log();
 
 */
 
-/*lesson 6, interfaces
+/*
+
+lesson 6, interfaces
 
 interface Point { 
 // when using interaces always use Pascal naming convetion first letter capatalized
@@ -95,8 +99,22 @@ interface Point {
 
  */
 
+ /*
+ 
+ lesson 7 classes
 
+ class Point{
+     x: number;
+     y: number;
+     draw(){
+        // ...   
+     }
 
+     getDistance(another: Point) {        
+     }
+ }
+
+ */
 
 
 
